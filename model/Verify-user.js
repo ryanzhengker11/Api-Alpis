@@ -14,7 +14,7 @@ const verify = new mongoose.Schema({
         default: () => Date.now(),
     },
 
-    expire_at: { type: Date, default: Date.now, expires: 1800 }
+    expire_at: { type: Date, default: Date.now, expires: 120 }
 });
 
 module.exports = mongoose.model('VerifyUser', verify);
