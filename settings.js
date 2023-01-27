@@ -30,8 +30,8 @@ keymongodb = process.env.mongodb //example "mongodb+srv://user:password@name_dat
 //___________ ┏  SMTP Setting  ┓ ___________\\
 
 //note service SMTP Gmail Tidak Boleh Send Kat Temp Email Kalau mahu pakai temp email buat di service lain
-usetempemail = false // kalau true boleh sing up pakai email temp kalau pakai service gmail pakai false je 
-servicesmtp = 'Gmail'//Ada gmail ada sendinblue ikut masing2 limit gmail 500 limit sendinblue 300 free. List service smtp : https://nodemailer.com/smtp/well-known/
+usetempemail = true // kalau true boleh sing up pakai email temp kalau pakai service gmail pakai false je 
+servicesmtp = 'Zoho'//Ada gmail ada sendinblue ikut masing2 limit gmail 500 limit sendinblue 300 free. List service smtp : https://nodemailer.com/smtp/well-known/
 sendemail = process.env.sendemail //Email SMTP
 fromsendemail = process.env.fromsendemail // From Email SMTP *kalau takde custom email kena sama email dengan Email SMTP
 sendpwmail = process.env.sendpwmail // Password Email SMTP
